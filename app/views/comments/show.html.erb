@@ -1,0 +1,6 @@
+<div class="container">
+	<b>Comentario:</b> <%= @comment.comment %>
+
+	<%= link_to "Delete", comment_path(@comment),
+							:method => :delete %>
+</div>

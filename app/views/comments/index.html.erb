@@ -1,0 +1,16 @@
+<div class="container">
+
+<h1>Aquí los comentarios</h1>
+
+<% @comments.each do |comment| %>
+
+	<p><%= link_to comment.comment, comment %></p>
+
+<p><%= link_to "Editar Comentario", edit_comment_path(comment) %></p>
+
+
+<% end %>
+
+<p><%= link_to "Añadir nuevo Comentario", new_comment_path%></p>
+
+</div>

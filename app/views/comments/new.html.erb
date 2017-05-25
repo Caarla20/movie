@@ -1,0 +1,16 @@
+<div class="container">
+<h2>Añade aqui un nuevo comentario</h2>
+
+	<%= form_for @comment do |comment| %>
+
+	<p>
+		<%= comment.label :comment %> <br/>
+		<%= comment.text_field :comment %>
+	</p>
+
+		<%= comment.submit "Añadir Comentario"%>
+
+	<% end %>
+
+	<p> <%= link_to "Añadir nuevo Comentario", new_comment_path %> </p>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+
+<h1>Aquí todas las películas que tenemos en la BBDD</h1>
+
+<% @peliculas.each do |peli| %>
+
+	<p><%= link_to peli.name, peli %></p>
+	<p><%= peli.stars %></p>
+	<p><%= peli.main_actor %></p>
+	<p><%= peli.year %></p>
+
+<p><%= link_to "Editar Pelicula", edit_pelicula_path(peli) %></p>
+
+
+<% end %>
+
+<p><%= link_to "Añadir nueva Pelicula", new_pelicula_path%></p>
+
+</div>
