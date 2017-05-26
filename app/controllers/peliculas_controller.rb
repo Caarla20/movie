@@ -1,6 +1,6 @@
 class PeliculasController < ApplicationController
 
-	def index
+	def index  
 		#Muestra las películas que hay en la base de datos.
 		@peliculas = Pelicula.all
 	end
