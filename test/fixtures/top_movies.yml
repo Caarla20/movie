@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  main_actor: MyString
+  stars: 1
+
+two:
+  name: MyString
+  main_actor: MyString
+  stars: 1
