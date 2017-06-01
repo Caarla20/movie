@@ -1,7 +1,434 @@
-<h1>Statics#index</h1>
-<p>Find me in app/views/statics/index.html.erb</p>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- -->
+
+<div class="container alltxt allbackground"><!-- Start container -->
+	<header class="headermovie"><!-- Start header -->
+			<img class="imglogo" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496217414/tomate-sonriente-comida-verduras-pintado-por-cassandra_-9753882_burned_tztnqo.png">
+    <!-- Start login/sign up -->
+		<div class="login1">
+    <!-- <a href="change-hyperlink-color.php"> -->
+			<b><%=link_to "SIGN UP", new_user_registration_path %></b></a>
+		</div>
+		<div class="login2">
+			<b><%=link_to "LOGIN", new_user_session_path %></b>
+		</div>
+    <!-- Finish login/sign up -->
+    <!-- Start search bar -->
+    <form class="searchposition body2 a2 form-wrapper">
+        <input type="text" id="search" placeholder="Search for..." required>
+        <input type="submit" value="go" id="submit">
+    </form>
+    <!-- Finish search bar -->
+    <!-- Start menu bar -->
+		<button class="headerbtn hbposition alltxt"><b>MOVIES & DVDS</b></button>
+		<button class="headerbtn hbposition alltxt"><b>TV</b></button>
+		<button class="headerbtn hbposition alltxt"><b>NEWS</b></button>
+	 <!-- Finish menu bar -->
+  </header><!-- Finish header -->
+
+    <!--  -->
+
+		<div class="row"><!-- Start row uno -->
+			<div class="background1">
+				<h6 class="rowunotxt">TRENDING ON RT</h6>
+			</div>
+		</div><!-- Finish row uno -->
+
+    <!-- Start boxes -->
+		<div class="row"><!-- Start row dos -->
+			<div class="col-lg-6 col-md- col-xs- box1"><!-- Star col uno -->
+        <div class="carouselmida container"><!-- Start 1 -->
+          <div id="myCarousel" class="carouselmida carousel slide" data-ride="carousel"><!-- Start 2 -->
+
+            <!-- Start carousel indicators -->
+            <ol class="carouselmida carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ol>
+            <!-- Finish carousel indicators -->
+
+      <!-- Start wrapper for slides -->
+      <div class="carouselmida carousel-inner"><!-- Start 3 -->
+        <div class="carouselmida item active"><!-- Start Carousel 1 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303539/c1_dlku4t.png" style="width:100%;">
+        </div><!-- Finish Carousel 1 -->
+
+        <div class="carouselmida item"><!-- Start Carousel 2 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303545/c2_d1wpy2.png" style="width:100%;">
+        </div><!-- Finish Carousel 2 -->
+    
+        <div class="carouselmida item"><!-- Start Carousel 3 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303991/c3_q0yfy0.png" style="width:100%;">
+        </div><!-- Finish Carousel 3 -->
+
+        <div class="carouselmida item"><!-- Start Carousel 4 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303553/c4_ordeoc.png" style="width:100%;">
+        </div><!-- Finish Carousel 4 -->
+      
+        <div class="carouselmida item"><!-- Start Carousel 5 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303561/c5_sxcewn.png" style="width:100%;">
+        </div><!-- Finish Carousel 5 -->
+
+        <div class="carouselmida item"><!-- Start Carousel 6 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303561/c6_lz8bca.png" style="width:100%;">
+        </div><!-- Finish Carousel 6 -->
+
+        <div class="carouselmida item"><!-- Start Carousel 7 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303561/c7_ikddsh.png" style="width:100%;">
+        </div><!-- Finish Carousel 7 -->
+
+        <div class="carouselmida item"><!-- Start Carousel 8 -->
+          <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303561/c8_fgz06p.png" style="width:100%;">
+        </div><!-- Finish Carousel 8 -->
+      </div><!-- Finish 3 -->
+      <!-- Finish wrapper for slides -->
+      <!-- Start left and right controls -->
+      <!-- Left-->
+      <a class="carouselmida left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="carouselmida glyphicon glyphicon-chevron-left"></span>
+        <span class="carouselmida sr-only">Previous</span>
+      </a>
+      <!-- Right -->
+      <a class="carouselmida right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="carouselmida glyphicon glyphicon-chevron-right"></span>
+        <span class="carouselmida sr-only">Next</span>
+      </a>
+      <!-- Finish left and right controls -->
+          </div><!-- Finish 2 -->
+        </div><!-- Finish 1 -->
+			</div><!-- Finish col uno -->
+
+			<div class="col-lg-3 col-md- col-xs- box2"><!-- Start col dos -->
+				<img class="imagehvr img2" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496303561/ww_rxlcwk.png">
+			</div><!-- Finish col dos -->
+
+			<div class="col-lg-3 col-md- col-xs- box3"><!-- Start col tres -->	
+				<img class="imagehvr img3" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496233388/Sin_t%C3%ADtulo_2_kd36lh.png">
+			</div><!-- Finish col tres -->
+		</div><!-- Finish row dos -->
+    <!-- Finsih boxes -->
+
+    <!-- Start list -->
+		<div class="row"><!-- Start row tres -->
+			<div class="col-lg-6 col-md- col-xs- boxtabla1"><!-- Start col siete -->
+				<h4><b>MOVIES OPENING THIS WEEK</b></h4>
+
+		    <!-- Start tabla pelis -->
+				<table class="table table-hover table-striped" border="0">	
+				<tbody>
+					<h4><tr class="alltxt">
+					  <th>STARS</th>	
+					  <th>MOVIE NAME</th>
+					  <th>ACTOR</th>
+					  <th>YEAR</th>
+					  <th>ID</th>
+					</tr></h4>		
+				</tbody>
+
+				<% @peliculas.each do |peli| %>
+					<tr>
+						<td style="background-color: white;" class="alltxt2">
+							<span class="fa fa-star">&nbsp;</span><%= peli.stars %>
+						</td>
+				
+						<td style="background-color: white;" class="alltxt2"> 
+							<%= link_to peli.name, pelicula_path(peli), :title => "Visualizar" %> 
+						</td>
+				 
+						<td style="background-color: white;" class="alltxt2">
+							<%= peli.main_actor %>
+						</td>
+				 
+						<td style="background-color: white;" class="alltxt2">
+							<%= peli.year %>	
+						</td>
+				 
+						<td style="background-color: white;" class="alltxt2">
+							<%= peli.id  %> 
+						</td> 
+					</tr>
+				<% end %>
+				</table>
+		    <!-- Finish tabla peliculas -->				                
 
 
-<%= link_to "Nosotros", about_path %> <br/>
-<%=link_to "Login", new_user_session_path %> <br/>
-<%=link_to "Sign up", new_user_registration_path %> <br/>
+				<h4><b>TOP BOX OFFICE</b></h4>
+				<table class="table">
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  31%</th>
+    					<th>Pirates of the Caribbean: Dead men tell no tiles</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  81%</th>
+    					<th>Guardians of the Galaxy VOL.2</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  19%</th>
+    					<th>Baywatch</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  71%</th>
+    					<th>Alien: Covenant</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  46%</th>
+    					<th>Everything, Everything</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  17%</th>
+    					<th>Diary Of A Wimpy Kid: The Long Haul</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  37%</th>
+    					<th>Snatched</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  28%</th>
+    					<th>King Arthur: Legend of the Sword</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  52%</th>
+    					<th>The Boss Baby</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  71%</th>
+    					<th>Beauty and the Beast</th>
+    					<th>  </th>
+  					</tr>
+				</table>
+
+				<h4><b>COMING SOON TO THEATERS</b></h4>
+				<table class="table">
+  					<tr>
+    					<th><h6>Not  Score Yet</h6></th>
+    					<th>The Mummy</th>
+    					<th>JUN 9</th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  100%</th>
+    					<th>It Comes At Night</th>
+    					<th>JUN 9</th>
+  					</tr>
+  					<tr>
+    				<th><h6>Not  Score Yet</h6></th>
+    					<th>Megan Leavey (Leavey)</th>
+    					<th>JUN 9</th>
+  					</tr>
+  					<tr>
+    				<th><h6>Not  Score Yet</h6></th>
+    					<th>My Cousin Rachel</th>
+    					<th>JUN 9</th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  82%</th>
+    					<th>Beatriz at Dinner</th>
+    					<th>JUN 9</th>
+  					</tr>
+				</table>
+				<br><br><br><br><br>					
+			</div><!-- Finish col siete -->
+
+			<div class="col-lg-6 col-md- col-xs- boxtabla2"><!-- Start col ocho -->
+				<h4><b>NEW TV TONIGHT</b></h4>
+				<table class="table">
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  90%</th>
+    					<th>Downward Dog: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  100%</th>
+    					<th>House of Cards: Season 5</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  100%</th>
+    					<th>iZombie: Season 3</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  97%</th>
+    					<th>The Americans: Season 5</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  83%</th>
+    					<th>Genius: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  78%</th>
+    					<th>Victorian Slum House: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  55%</th>
+    					<th>Prision Break: Season 5</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  25%</th>
+    					<th>Imaginary Mary: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><h6>Not  Score Yet</h6></th>
+    					<th>Casual: Season 3</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><h6>Not  Score Yet</h6></th>
+    					<th>Famous in Love: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><h6>Not  Score Yet</h6></th>
+    					<th>American Epic: Season 1</th>
+    					<th>  </th>
+  					</tr>
+				</table>			
+
+				<h4><b>MOST POPULAR TV ON RT</b></h4>
+				<table class="table">
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg"> 95%</th>
+    					<th>Twin Peaks: The Return</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">96%</th>
+    					<th>American Gods: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">100%</th>
+    					<th>Master of None: Season 2</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">100%</th>
+    					<th>The Handmaid's Tale: Season 1</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">98%</th>
+    					<th>The Leftovers: Season 3</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">93%</th>
+    					<th>The Keepers: Miniseries</th>
+    					<th>  </th>
+  					</tr>
+				</table>
+
+				<h4><b>TOP DVD & STREAMING MOVIES</b></h4>
+				<h6>FandangoNOW | Nerflix | iTunes | Amazon | More...</h6>
+				<table class="table">
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  92%</th>
+    					<th>Logan</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  99%</th>
+    					<th>Get Out</th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://coopecanera.com/wp-content/uploads/2014/11/mancha-verde.png">  35%</th>
+    					<th>The Great Wall/th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  76%</th>
+    					<th>Wakefield/th>
+    					<th>  </th>
+  					</tr>
+  					<tr>
+    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  100%</th>
+    					<th>My Life as Zucchini (Ma Vie de Courgette)</th>
+    					<th>  </th>
+  					</tr>
+				</table>	
+			</div><!-- Finish col ocho -->
+		</div><!-- Finish row tres -->
+    <!-- Finish list -->
+
+    <div class="row"><h4><b>MOVIE TRAILERS</b></h4></div>
+    <div class="row"><!-- Start row cuatro -->
+      <div class="col-lg-4">
+        <h4>IT</h4>
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/FnCdOQsX5kc" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-lg-4">
+        <h4>Wonder Woman</h4> 
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-lg-4">
+        <h4>Thor: Ragnarok</h4> 
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/v7MGUNV8MxU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div><!-- Finish row cuatro -->
+
+
+  <!-- Start footer -->
+	<footer class="footermovie">
+    <div class="row footertxt"><!-- Start row cuatro -->
+      <div class="col-lg-3"><!-- Start col nueve -->
+        <h5>Help<br>
+        <%= link_to "About", about_path %><br>
+        What's the Tomatometer?<br>
+        Feedback<br></h5>
+      </div><!-- Finish col nueve -->
+
+      <div class="col-lg-3"><!-- Start col diez -->
+        <h5>Critic Submission <br>
+            Licensing <br>
+            Advertise <br>
+            Careers</h5>
+      </div><!-- Finish col diez -->
+
+      <div class="col-lg-3"><!-- Start col once -->
+          <h4><img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496316760/sobre_2_eim54a.png" style="height: 23px; width: 30px;"> JOIN THE NEWSLETTER</h4>
+          <h5>Get the freshest reviews, news, and more delivered right to your inbox!</h5>
+      </div><!-- Finish col once -->
+
+      <div class="col-lg-3"><!-- Start col once -->
+        <h4>FOLLOW US</h4>    
+        <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496317274/facebook-logo_318-49940_ygnhjq.jpg" style="height: 25px; width: 25px;">
+        <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496317274/twitter-logo_318-40459_mlwakn.jpg" style="height: 30px; width: 30px;">
+        <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496317274/instagram-icon-logo-vector-download_ej58kq.jpg" style="height: 30px; width: 30px;">
+        <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496317274/snapchat-ghost-logo-B618EE0704-seeklogo.com_jt201o.png" style="height: 30px; width: 30px;">
+        <img src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496317274/96baab_1cd10380276742d681b73c247295cd1e-mv2_qndfwy.png" style="height: 25px; width: 35px;">
+      </div><!-- Finish col once -->
+    </div><!-- Finish row cuatro -->
+		
+    <div class="row footertxt"><!-- Start row cinco -->
+      <h5>Copyright © Fandango. All rights reserved. V2 Privacy Policy | Terms and Policies | Ad Choices</h5>
+    </div><!-- Finish row cinco -->
+	</footer><!-- Finish footer -->
+</div><!-- Finish container -->
