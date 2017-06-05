@@ -1,0 +1,54 @@
+.settingtxt {
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* BUTTONS */
+.summarybtn {
+	 border: none;
+	 border-radius: 8px;
+	 padding: 10px 20px;
+	 background: #0099ff;
+	 color: white;
+	 font-size: 17px;
+	 margin-top: 10px;
+}
+
+.topbtn {
+	border: none;
+	border-radius: 8px;
+	padding: 10px 20px; 
+	background: white;
+	color: #0099ff;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.topbtn:hover {
+	background: red;
+	color: #0099ff;
+	font-size: 17px;
+}
+
+/* BOXES */
+.box4 {
+	border: 1px solid #e6e6e6;
+	margin-top: 10px;
+}
+
+.box5 {
+	border: 1px solid #e6e6e6;
+	margin-top: 20px;
+}
+
+.box6 {
+	border: 1px solid #FDEE00;
+	padding: 15px 20px;
+	background-color: #FDEE00;
+
+}
+
+/* IMAGENES */
+.loginimg {
+	height: 110px;
+	width: 110px;
+}

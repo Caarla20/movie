@@ -1,7 +1,4 @@
 /* BACKGROUNDS */
-.allbackground {
-	background-image: url();
-}
 .background1 {
 	background-color: #333333;
 	height: 30px;
@@ -25,7 +22,7 @@
 }
 
 .headerbtn {
-    background-color: #3A9425;
+    background: #3A9425;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -39,13 +36,13 @@
 }
 
 .headerbtn:hover {
-    background-color: white;
+    background: white;
     color: black;
 }
 
 .hbposition {
 	float: right;
-	margin: -30px -10px 10px 10px;
+	margin: -20px -10px 10px 10px;
 }
 
 .login1{
