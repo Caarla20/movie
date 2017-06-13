@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  main_actor: MyString
+  year: 1
+  oscar: 1
+  category: MyString
+  director: MyString
+  country: MyString
+  revenue_amonut: 1
+  email_contact: MyString
+
+two:
+  name: MyString
+  main_actor: MyString
+  year: 1
+  oscar: 1
+  category: MyString
+  director: MyString
+  country: MyString
+  revenue_amonut: 1
+  email_contact: MyString
