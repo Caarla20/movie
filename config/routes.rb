@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'examen_peliculas/index'
+
   get 'users/index'
 
   get 'settings/index'
