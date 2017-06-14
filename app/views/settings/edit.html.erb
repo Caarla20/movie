@@ -1,0 +1,11 @@
+<div class="container">
+	<%= form_for @setting do |setting|%>
+ 
+	<%= setting.text_field :country%>
+		<br>
+	<%= setting.text_field :language%>
+ 
+	<%= setting.submit "Change"%>
+ 
+	<%end%>
+</div>

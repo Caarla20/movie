@@ -151,10 +151,10 @@
 }
 
 .imglogo {
-	height: 105px;
-	width: 105px;
+	height: 100px;
+	width: 240px;
 	float: left;
-	margin: -53.5px -40px 0px -30px;
+	margin: -50px -40px 0px -50px;
 }
 
 .img1 {
@@ -164,12 +164,18 @@
 }
 
 .img2 {
+    height: 350px;
+    width: 583px;
+    margin: 0px 0px 0px -15px;
+}
+
+.img3 {
 	height: 350px;
 	width: 292px;
 	margin: 0px 0px 0px -15px;
 }
 
-.img3 {
+.img4 {
 	height: 350px;
 	width: 291px;
 	margin: 0px 0px 0px -15px;
@@ -178,30 +184,6 @@
 .miniimg {
 	width: 30px;
 	height: 30px;
-}
-
-/* CAROUSEL */
-.carouselmida {
-    height: 500px !important;
-	width: 800px !important;
-	margin: 0px 0px 0px 3px;
-}
-
-.indicatorsposition {
-    float:right;
-    margin: 0px 0px 220px 400px;
-}
-
-.leftcontrol {
-    margin: 0px 0px 0px 0px;
-    height: 350px;
-    width: 80px; 
-}
-
-.rightcontrol {
-    margin: 0px 587px 0px 0px;
-    height: 320px;
-    width: 80px;
 }
 
 /* FOOTER */
