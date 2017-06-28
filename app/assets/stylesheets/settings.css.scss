@@ -50,5 +50,106 @@
 /* IMAGENES */
 .loginimg {
 	height: 110px;
-	width: 110px;
+	width: 115px;
+	margin: 30px 0px 0px 30px;
+}
+
+.movie1 {
+	width: 150px;
+
+}
+
+.movie1:hover {
+    opacity: 0.5;
+}
+
+.movie2 {
+	margin: 0px 0px 0px 14px;
+	width: 150px;
+}
+
+.movie2:hover {
+    opacity: 0.5;
+}
+
+.movie3 {
+	margin: 0px 0px 0px 14px;
+	width: 150px;
+}
+
+.movie3:hover {
+    opacity: 0.5;
+}
+
+.movie4 {
+	width: 150px;
+	margin: 0px 0px 0px 14px;
+}
+
+.movie4:hover {
+    opacity: 0.5;
+}
+
+.serie1 {
+	width: 150px;
+}
+
+.serie1:hover {
+    opacity: 0.5;
+}
+
+.serie2 {
+	margin: 0px 0px 0px 14px;
+	width: 150px;
+}
+
+.serie2:hover {
+    opacity: 0.5;
+}
+	
+.serie3 {
+	margin: 0px 0px 0px 14px;
+	width: 150px;
+}
+
+.serie3:hover {
+    opacity: 0.5;
+}
+
+.serie4 {
+	width: 150px;
+	margin: 0px 0px 0px 14px;
+}
+
+.serie4:hover {
+    opacity: 0.5;
+}
+
+/* BUTTON ADD/EDIT */
+.addbtn {
+	 border: none;
+	 border-radius: 8px;
+	 padding: 5px 15px;
+	 background: #0099ff;
+	 color: white;
+	 font-size: 17px;
+	 float: left;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 margin: 10px 0px 10px 30px;
+}
+.editbtn {
+	 border: none;
+	 border-radius: 8px;
+	 padding: 5px 15px;
+	 background: #0099ff;
+	 color: white;
+	 font-size: 17px;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+}
+
+/* TEXT */
+.imgtxt {
+	margin: 0px 0px 0px 30px;
 }

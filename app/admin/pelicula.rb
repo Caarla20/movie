@@ -1,3 +1,3 @@
 ActiveAdmin.register Pelicula do
-	permit_params
+	permit_params :name, :main_actor, :year
 end

@@ -20,10 +20,10 @@
 
 	<div class="row"><!-- Start row tres -->
 		<div class="col-lg-4 box4"><!-- Start col uno -->
-			<img class="loginimg" src="https://msftmecprodstorage.blob.core.windows.net/images/EzMemberDefault.jpg">
-		  <h5><b>USER NAME HERE</b></h5>
-      <h5>Manage Account <br>
-      Profile Summary</h5>
+			<img class="loginimg" src="https://msftmecprodstorage.blob.core.windows.net/images/EzMemberDefault.jpg"><br><br>
+		  <h5 style="color:gray" class="imgtxt"><b>USER NAME HERE</b></h5><br>
+      <h5 class="imgtxt" style="color: #0099ff">Manage Account <br><br>
+      Profile Summary</h5><br>
 
        <!-- COMPROBACIO DE SETTING SI NO ES NULL -->     
       <%if !@setting.nil?%>
@@ -31,11 +31,11 @@
         <p><b>Country:</b>&nbsp;<%= @setting.country %></p>
         <p><b>Language:</b>&nbsp;<%= @setting.language %></p>
  
-        <%= link_to 'Edit', edit_setting_path(@setting.id), :title => "Edit", class: 'btn btn-md btn-primary fa fa-1x fa-edit', style:"color: white;" %>
+        <%= link_to 'Edit', edit_setting_path(@setting.id), :title => "Edit", class:'editbtn settingtxt', style:"color: white;" %>
         <br></br>  
       <%else%>
  
-    <%= link_to 'Añadir', new_setting_path, title:"Añadir setting !!", class:"btn btn-md btn-danger fa fa-1x fa-address-book nodecor pull-right", style:"color:white;" %>
+    <%= link_to 'Add', new_setting_path, title:"Add setting", class:"addbtn settingtxt", style:"color:white;" %>
  <%end%>
 
 
@@ -46,7 +46,10 @@
       
 		<div class="col-lg-7 box5"><!-- Start col tres -->
     <h4 class="box6"><b>WANT-TO-SEE MOVIES</b></h4>
-      <h5>This user has no <i>Want to See</i> movie selections yet.</h5>
+      <img class="movie1" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1497435078/7_nry1mz.png">
+      <img class="movie2" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1497435078/19_vlfbf1.png">
+      <img class="movie3" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1497435077/10_ddkjcy.png">
+      <img class="movie4" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1497435078/4_bjozfc.png">
 		</div><!-- Finish col tres -->
 	</div><!-- Finish row tres -->
 
@@ -64,7 +67,10 @@
     
     <div class="col-lg-7 box5"><!-- Start col seis -->
       <h4 class="box6"><b>WANT-TO-SEE TV</b></h4>
-      <h5>This user has no <i>Want to See</i> movie selections yet.</h5> 
+      <img class="serie1" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1498474429/mediacover-18070-5_ujoctt.png"> 
+      <img class="serie2" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1498474429/mediacover-7003-5_bmr6pt.png">
+      <img class="serie3" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1498474430/mediacover-16820-5_osndy8.png">
+      <img class="serie4" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1498475598/mediacover-18092-5_tx55vv.png">
     </div><!-- Finish col seis -->
   </div><!-- Finish row cuatro -->
 
@@ -85,7 +91,13 @@
     </div><!-- Finish col nueve -->
   </div><!-- Finish row cinco -->
 
-
+<%if flash.present?%>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-md-offset-3" style="padding:25px 0">
+      <%= render partial: "shared/flash_messages", flash: flash %>
+    </div>
+  </div>
+<%end%>
 
   <%= render "shared/footer" %>
 </div><!-- Finish container -->

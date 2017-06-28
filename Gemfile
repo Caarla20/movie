@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
+# git_source(:github) do |repo_name|
+#   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+#   "https://github.com/#{repo_name}.git"
+# end
+gem 'stripe', '~> 2.12'
 gem 'cancancan', '~> 2.0'
 gem 'activeadmin', '~> 1.0'
 gem 'devise', '~> 4.3'
 gem 'coffee-script-source', '1.8.0'
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
@@ -32,8 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.11', platform: :ruby
-# Use Capistrano for deployment
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'# Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
  
 group :development, :test do

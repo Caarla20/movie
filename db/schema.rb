@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170607074417) do
+ActiveRecord::Schema.define(version: 20170627123130) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -66,6 +66,20 @@ ActiveRecord::Schema.define(version: 20170607074417) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "examen_peliculas", force: :cascade do |t|
+    t.string   "name"
+    t.string   "main_actor"
+    t.integer  "year"
+    t.integer  "oscar"
+    t.string   "category"
+    t.string   "director"
+    t.string   "country"
+    t.integer  "revenue_amonut"
+    t.string   "email_contact"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "languages", force: :cascade do |t|
     t.string   "language"
     t.datetime "created_at", null: false
@@ -81,6 +95,18 @@ ActiveRecord::Schema.define(version: 20170607074417) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "payments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.boolean  "subscription"
+    t.string   "channel"
+    t.boolean  "active"
+    t.integer  "plan"
+    t.bigint   "amount"
+    t.index ["user_id"], name: "index_payments_on_user_id"
+  end
+
   create_table "peliculas", force: :cascade do |t|
     t.string   "name"
     t.string   "main_actor"
@@ -88,6 +114,8 @@ ActiveRecord::Schema.define(version: 20170607074417) do
     t.integer  "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text     "url"
+    t.string   "director"
   end
 
   create_table "settings", force: :cascade do |t|
