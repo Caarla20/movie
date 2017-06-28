@@ -31,12 +31,10 @@ class PeliculasController < ApplicationController
 		@pelicula = Pelicula.find(params[:id])
  
 		if @pelicula.update_attributes(peli_params)
-		redirect_to peliculas_path, :notice => "éxito!"
-		
+			redirect_to peliculas_path, :notice => "éxito!" 
 		else
-		render "edit"
-		end
-
+			render "edit"
+		end 
 	end
    
 	def destroy
@@ -46,8 +44,7 @@ class PeliculasController < ApplicationController
     end
   
 
-	private
-
+	private 
 		def peli_params
 			params.require(:pelicula).permit(:name, :main_actor, :stars, :year, :url, :director)
 		end
