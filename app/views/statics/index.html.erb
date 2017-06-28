@@ -121,36 +121,7 @@
   					</tr>
 				</table>
 
-				<h4><b>COMING SOON TO THEATERS</b></h4>
-				<table class="table">
-  					<tr>
-    					<th><h6>Not  Score Yet</h6></th>
-    					<th>The Mummy</th>
-    					<th>JUN 9</th>
-  					</tr>
-  					<tr>
-    					<th><img class="miniimg" src="http://images.gofreedownload.net/tomato-238102.jpg">  100%</th>
-    					<th>It Comes At Night</th>
-    					<th>JUN 9</th>
-  					</tr>
-  					<tr>
-    				<th><h6>Not  Score Yet</h6></th>
-    					<th>Megan Leavey (Leavey)</th>
-    					<th>JUN 9</th>
-  					</tr>
-  					<tr>
-    				<th><h6>Not  Score Yet</h6></th>
-    					<th>My Cousin Rachel</th>
-    					<th>JUN 9</th>
-  					</tr>
-  					<tr>
-    					<th><img class="miniimg" src="http://res.cloudinary.com/dy6weuz9h/image/upload/v1496231557/1_burned_fepmac.png">  82%</th>
-    					<th>Beatriz at Dinner</th>
-    					<th>JUN 9</th>
-  					</tr>
-				</table>
-				<br><br><br><br><br>					
-			</div><!-- Finish col siete -->
+				</div><!-- Finish col siete -->
 
 			<div class="col-lg-6 boxtabla2"><!-- Start col ocho -->
 				<h4><b>NEW TV TONIGHT</b></h4>
@@ -281,21 +252,46 @@
 
     <div class="row"><h4><b>MOVIE TRAILERS</b></h4></div>
     <div class="row"><!-- Start row cuatro -->
-      <div class="col-lg-4">
+      <div class="col-lg-4"><!-- Start col nueve -->
         <h4>IT</h4>
         <iframe width="100%" height="250px" src="https://www.youtube.com/embed/FnCdOQsX5kc" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div><!-- Finish col nueve -->
 
-      <div class="col-lg-4">
+      <div class="col-lg-4"><!-- Start col diez -->
         <h4>Wonder Woman</h4> 
         <iframe width="100%" height="250px" src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div><!-- Finish col diez -->
 
-      <div class="col-lg-4">
+      <div class="col-lg-4"><!-- Start col once -->
         <h4>Thor: Ragnarok</h4> 
         <iframe width="100%" height="250px" src="https://www.youtube.com/embed/v7MGUNV8MxU" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div><!-- Finish col once -->
     </div><!-- Finish row cuatro -->
+
+<!-- ****************************** -->
+    <br><br><br><br>
+    <div class="row"><!-- Start row cinco -->
+      <div class="col-sm-12" style="text-align:center;"><!-- Start col doce -->
+        <%= form_tag(root_path, :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+        <%= submit_tag t('general.send') %>
+        <% end %>
+      </div><!-- Finish col doce -->
+    </div><!-- Finish row cinco -->
+<br><br>
+    <div class="row"><!-- Start row seis -->
+    <%@peliculas.each do |peli|%>
+    <div class="col-sm-6 col-md-4 col-lg-3"><!-- Start col trece -->
+        <div class="latest-movie">
+            <a href="#"><img src="<%=peli.url%>"></a>
+            <p><b>Nombre:</b> <%=peli.name%></p>
+            <p><b>Director:</b> <%=peli.director%></p>
+            <p><b>Año:</b> <%=peli.year%></p>
+        </div><!-- Finish col trece -->
+    </div><!-- Finish row seis -->
+    <%end%>
+</div>
+<!-- ****************************** -->
 
 <%= render "shared/footer" %>
     
