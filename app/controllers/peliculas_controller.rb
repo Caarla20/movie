@@ -49,6 +49,6 @@ class PeliculasController < ApplicationController
 	private
 
 		def peli_params
-			params.require(:pelicula).permit(:name, :main_actor, :stars, :year)
+			params.require(:pelicula).permit(:name, :main_actor, :stars, :year, :url, :director)
 		end
 end
